@@ -1,0 +1,281 @@
+ /*3 top courses outer box*/
+  
+ #course1 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 55%;
+    transform: rotate(0deg);
+    background: radial-gradient(rgb(0 0 0 / 5%),#1553a6);
+    margin-top: -3px;
+    margin-bottom: 20px;
+    height: 296px;
+    outline-offset: -8px;
+    border-radius: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    text-align: center;
+    
+  }
+  #course1:before{
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  
+  }
+  
+  #course1:hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #0099FF,
+              0 0 0.8rem #0099FF,
+              0 0 2.8rem #0099FF,
+              inset 0 0 1.3rem #0099FF; 
+   
+  --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;
+  
+  }
+  
+  #course1 .inner:nth-child(2):hover {
+  
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #FF1A00,
+              0 0 0.8rem #FF1A00,
+              0 0 2.8rem #FF1A00,
+              inset 0 0 1.3rem #FF1A00; 
+  }
+  /*end of 3 top courses*/
+  #courseSelection{
+   color:white; 
+    
+    
+  }
+  
+  /*inner content of each course*/
+#inncontent1 {
+margin-top:25px;
+transform: scale(1.2);
+height: 350px;
+width:350px;
+  }
+  
+  
+  /*end of inner content of each course*/
+  
+  /*mobile responsive */
+  
+  @media screen and (max-width: 1550px){
+  
+    /*meet instructor mobile unused */
+    #meet {
+  width:100%;
+  
+      margin-left: auto;
+      margin-right: auto;
+  
+  
+  }
+    
+  /*top 3 course outer box mobile  */
+  #course1 {
+        margin-right: auto;
+      margin-left: auto;
+  width:75%;
+   transform:rotate(0deg);
+    background: radial-gradient(rgb(0 0 0 / 5%),#1553a6);
+    margin-top:-3px;
+    margin-bottom:94px;
+    height:400px;
+  
+  }
+  
+    
+  
+    /*course inner content mobile*/
+  #inncontent1 {
+  
+  margin-left: 0%;
+  height: 100%;
+  width:100%;
+  margin-top:-10px;
+  transform: scale(1);
+  }
+    
+   /*meet your instructor mobile*/
+  #bio{
+   font-size:14px; 
+    line-height:25px;
+  text-align: left;
+  }
+  
+  
+  
+  }
+
+    /*course hover anime*/
+    
+  
+  
+  
+  
+    @keyframes road-moving {
+        100% {
+            transform: translate(-300px);
+        }
+    }
+
+
+
+   #hovTest:hover ~ #hovRoad {
+        height: 5px;
+        width: 250%;
+        position: absolute;
+        left: -10%;
+        border-top: 10px dashed white;
+        margin-top: 5px;
+        animation: road-moving 2s infinite linear;
+        
+    }
+
+
+
+
+
+
+#hovTest:hover~ #car1:before{
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #FFF,
+     -35px 18px 0 1.5px #FFF;
+
+
+}
+
+ #car1:hover ~ #hovRoad {
+        height: 5px;
+        width: 250%;
+        position: absolute;
+        left: -10%;
+        border-top: 10px dashed white;
+        margin-top: 5px;
+        animation: road-moving 2s infinite linear;
+        
+    }
+
+
+
+
+
+
+#car1:hover::before{
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #FFF,
+     -35px 18px 0 1.5px #FFF;
+
+
+}
+
+ #hovRoad:hover {
+        height: 5px;
+        width: 250%;
+        position: absolute;
+        left: -10%;
+        border-top: 10px dashed white;
+        margin-top: 5px;
+        animation: road-moving 2s infinite linear;
+        
+    }
+
+
+
+
+
+
+#hovRoad:hover~ #car1:before{
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #FFF,
+     -35px 18px 0 1.5px #FFF;
+
+
+}
+
+
+/*course hover anime end*/
+
+ /*3D road animation controls*/
+ .div2{
+     
+    margin-top:1px;
+    /* padding: 50px; */
+
+    /*background: rgba(100,100,100,0.5);*/
+    transform-style: preserve-3d;
+    transform: rotateX(45deg);
+width:100%;
+height:30%;
+/* overflow:hidden; */
+  }
+
+  .moving_car{
+
+      font-size: 50px; color: white; text-shadow: 2px 2px 2px #0099FF
+                              ; position: relative; animation: block1 16s infinite linear; margin-top: -15px; transform-style: preserve-3d; transform: rotateX(-55deg)scaleX(-1);
+  }
+.moving_car2{
+  font-size: 50px; margin-top: -35px; color: white; text-shadow: 2px 2px 2px #0099FF
+                              ;  position: relative; ;  animation: block1 15s infinite linear; transform-style: preserve-3d; transform: rotateX(-55deg)scaleX(-1);
+}
+
+  .white_road_marks{
+      height: 5px; border-top: 8px dashed white; margin-top: 25px; border-bottom: none; overflow: hidden;
+  }
+.yellow_road_marks{
+  background: yellow; height: 5px; overflow: hidden;
+}
+.truck{
+  font-size: 50px; color: white; text-shadow: 2px 2px 2px #0099FF
+                              ;  margin-top: -15px; position: relative; animation: block1 16s infinite reverse linear; transform: rotateX(-55deg)scaleX(1);
+}
+
+.custom{
+  overflow:hidden;
+  overflow-x: hidden;
+  background:black;
+}
+    .road {
+      position: relative;
+      height: 200px;
+      width: 100%;
+      background:black;
+      /* margin-left: 60px; */
+      /*border: 1px solid blue;*/
+      perspective: 15em;
+overflow:hidden;
+overflow-x: hidden;
+    }
+
+
+
+    @keyframes block1{
+      0%{
+        left: 100vw;
+      }
+    100%{
+      left:-100vw;
+    }
+    }
+
+/*end of 3D road animation controls*/

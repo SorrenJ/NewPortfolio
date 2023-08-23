@@ -15,7 +15,7 @@
   <link href="SCSS/main.css" rel="stylesheet">
   <link href="SCSS/card.css" rel="stylesheet">
   <link href="SCSS/typing.css" rel="stylesheet">
-
+  <script src="JS/processing.js" type="text/javascript"></script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-489NYV1TJL"></script>
 <script>
@@ -96,7 +96,7 @@
           <div class="triangleTopLeft_main"></div>
         </div>
 
-        <div class="flex-banner-item-right">
+        <div class="flex-banner-item-right" style="position:sticky;">
           <div class="blossom">
 
             <svg viewBox="0 0 1051 966" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,32 +165,34 @@
 
     <section id="featured" class="section1">
       <br>
-      <h1 class="title"><i class="fa-brands fa-envira" style="color:
+      <!-- <h1 class="title"><i class="fa-brands fa-envira" style="color:
 
-          #DF62BC;"></i> Featured Stories</h1>
+          #DF62BC;"></i> Featured Stories</h1> -->
       <br>
       <div class="flex-container3">
 
-        <div class="flex-container3_item "><a target="_blank"
+        <div class="flex-container3_item"><a target="_blank"
             href="https://olc.sfu.ca/index.php/blog/how-tailor-your-website-success"><img src="assets/tailor.png"
               alt="tailor"></a>
           <br>
-          <p> How to Tailor your Website for Success</p>
+          <p>How to tailor your website for success</p> 
+
+        
           <br>
 
         </div>
-        <div class="flex-container3_item "> <a target="_blank" href="https://www.youtube.com/watch?v=lzK-7wYOdo0"><img
+        <div class="flex-container3_item"> <a target="_blank" href="https://www.youtube.com/watch?v=lzK-7wYOdo0"><img
               src="assets/joomla_laptop2.png" alt="me"></a>
           <br>
-          <p>Joomla! Team Interview</p> <br>
-
+          <p>Joomla! Discussion</p>  <br>
+       
         </div>
-        <div class="flex-container3_item "><a target="_blank"
+        <div class="flex-container3_item"><a target="_blank"
             href="https://olc.sfu.ca/index.php/blog/boosting-productivity-web-development"><img
               src="assets/SJao.jpeg" alt="hamburger"></a>
           <br>
           <p>Boosting Productivity with Web Development</p> <br>
-
+        
         </div>
       </div>
       <br>
@@ -209,12 +211,12 @@
 
             <div class="wrapper-h1-banner">
               <div class="typing-demo type_large_size">
-                <h1>Hello,</h1>
+                <h1>Hello!</h1>
               </div>
               <br><br><br>
-              <div class="typing-demo1 type_large_size">
+              <!-- <div class="typing-demo1 type_large_size">
                 <p>there!</p>
-              </div>
+              </div> -->
             </div>
             <div class="banner_heading inverse_heading">
               <h1>Hello, there!</h1>
@@ -383,12 +385,12 @@
       <!-- end of card 3 -->
 
       <!--4th card -->
-      <div class="tree_start ">
+    
         <div id="4" class="card">
           <div class="card-container-inverse">
-            <div class="card-container-item-left-inverse tree">
+            <div class="card-container-item-left-inverse" >
 
-              <div class="animation_tree">
+              <!-- <div class="animation_tree">
                 <svg viewBox="0 0 1051 966" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 
@@ -405,10 +407,111 @@
 
 
                 </svg>
+              </div> -->
+
+
+
+              <script type="application/processing" >
+                void setup()
+                {
+            
+                     size(800,600);
+            
+                 }
+            
+                int levelsMin = 2;
+                    int levelsMax = 9;
+                    float initialLength = 100;
+            
+                    float angleMin = PI/17;
+                    float angleMax = PI/10;
+            
+                    int pointColor = color(27, 25, 9);
+            
+                   void draw() {
+            
+            
+                        background(color(255,255,255,0.2));
+                        stroke(0,0, 0,50+mouseX/2);
+                        strokeWeight(10);
+            
+                        float currentAngle = map (mouseX, 0, width, angleMin, angleMax); //mouse control of the branch angle
+                        int currentLevels = (int)map (mouseY, height,0, levelsMin, levelsMax); //mouse control of the generations count
+            
+                        pushMatrix(); //save the world transformation matrix
+                        translate (width/2, height); //move the origin to the middle / bottom
+                       tree (currentLevels, initialLength, currentAngle); //draw first two branches - stems
+                        popMatrix(); //return to the world coordinate system
+                    }
+            
+                    void tree (int levels, float length, float angle){
+                        if (levels>0){  //check if there are any levels left to render
+                            //destra
+                            pushMatrix();           //save current transformation matrix
+            
+                            rotate (angle);         //rotate new matrix to make it point to the right
+                            line (0,0,0,-length);   //draw line "upwards"
+                            pushMatrix();           //save current (e.g. new) matrix
+                            translate(0,-length);   //move the origin to the branch end
+                            scale (0.95);          //scale down. fun fact - it scales down also the stroke weight!
+                            strokeWeight(levels);
+                           tree (levels-1, length, angle);  //call the recursive function again
+                            popMatrix();            //return to the matrix of the current line
+                            popMatrix();            //return to the original matrix
+                            //second branch - the same story
+                            pushMatrix();
+                            rotate (-angle/1.7);
+                            line (0,0,0,-length);
+                            pushMatrix();
+                            translate(0,-length);
+                            scale (0.95);
+                            strokeWeight(levels);
+                            tree (levels-1, length, angle);
+                            popMatrix();
+                            popMatrix();
+            
+            
+                        }
+                        if (levels==levelsMax);//draws flowers
+                        //drawFlowers();
+                    }
+                    void drawFlowers() { // draws flowers on branches
+            
+                    //  println("flowers");
+                      noStroke();
+                      fill(#FFFF00);
+                      ellipse(0, 0, 0.4, 0.4);
+                      // draw 5 petals rotating after each one
+                      for (int i = 0; i < 5; i++) {
+                        fill(#FFB6C1);
+                        ellipse(0, -0.5, 0.4, 0.4);
+                        rotate(radians(72));
+                      }
+                    }
+                </script>
+
+     
+            
+                <canvas id="sketch" tabindex="0" width="200%" height="" style="image-rendering: crisp-edges !important; outline: none; position:relative; top:-110px; z-index:-2"> </canvas>
+            
               </div>
 
 
-            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
             <div class="card-container-item-right-inverse">
@@ -493,13 +596,11 @@
     <br>
 
 
-    <div class="section2 ">
-      <div class="greenbox">
+    <div class="section2inverse ">
+      <div class="greenbox2">
       </div>
       <div class="flex-container">
-        <div class="proj-img-container"> <img class="proj-img" src="assets/ImgUI/Picture4.png" alt="profile_helper">
 
-        </div>
         <div>
           <h1>Profile Helper</h1>
           <p>A content generator tool to help with creating graduate student profile pages.</p>
@@ -512,6 +613,11 @@
             <div class="button"> Read more </div>
           </a>
         </div>
+
+        <div class="proj-img-container"> <img class="proj-img" src="assets/ImgUI/Picture4.png" alt="profile_helper">
+
+        </div>
+  
       </div>
     </div>
 
@@ -666,7 +772,7 @@
 
 
   <script src="JS/Blossom_Transition_responsive.js"></script>
-  <script src="JS/grow_app_tree.js"></script>
+  <!-- <script src="JS/grow_app_tree.js"></script> -->
   <!-- <script src="JS/Blossom_Transition_responsive_project.js"></script> -->
 
 

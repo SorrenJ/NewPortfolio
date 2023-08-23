@@ -69,8 +69,8 @@ display:none;
 }
 
 .triangleTopRight-inverse{
-  border-left:100vh solid transparent;
-  border-top: 25vw solid rgb(0,0,0);
+  border-left:280vh solid transparent;
+  border-top: 25vw solid #000000;
   z-index: 4;
   margin-left: -10%;
   position: absolute;
@@ -207,8 +207,8 @@ opacity:1;
 @media only screen and (max-width: 1000px) {
   .portrait{
     position: relative;
-    width: 70% !important;
-    height: 70% !important;
+    width: 100% !important;
+    height: 100% !important;
     margin-left: 0;
     margin-right: 0;
   }

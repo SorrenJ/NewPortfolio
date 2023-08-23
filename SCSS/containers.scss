@@ -69,7 +69,7 @@ $white: #ffffff;
 
   .flex-banner-item-left h1 {
 
-font-size:2.5em;
+font-size:1.5em;
   }
 
 @media only screen and (max-width: 800px) {
@@ -162,35 +162,87 @@ font-size:2.5em;
    padding-right:15px;
    margin-left:15px;
  }
- 
+ .flex-container3_item img{
+  width:99%;
+  height:300px;
+  object-fit: cover;
+ //  border-radius: 8px;
+ -webkit-filter: brightness(100%);
+ filter: grayscale(100%);
+
+ transition: filter 2s ease-in-out;
+
+}
+
+
+
+ @media only screen and (min-width: 800px) {
  /* project container3 item */
  .flex-container3_item {
  
   width:33.33%;
-   padding-left:15px;
-   padding-right:15px;
+  //  padding-left:15px;
+  //  padding-right:15px;
   
-   margin-left:auto;
-   margin-right:auto;
+  //  margin-left:auto;
+  //  margin-right:auto;
    text-align:center;
+   overflow: hidden;
+            margin: 0 auto;
+   height: 300px;
+  color:transparent;
   }
+
+
+
  
-  .flex-container3_item img{
-   width:70%;
-   height:200px;
-   object-fit: cover;
-   border-radius: 30px;
+  
  
-  }
+
+  .flex-container3_item p{
+
+    top:-100px;
+    position:relative;
+    text-align: center !important;
  
- 
+    margin-left:auto !important;
+
+margin-right:auto !important;
+padding-left: 15px;
+padding-right: 15px;
+font-size:2em;
+word-break: break-word;
+     }
+    
+    }
   /* project container3 item */
-  .flex-container3 .flex-container3_item:hover {
-   transform:scale(1.1);
-   transition: 0.5s;
-   /* background:#039500; */
+.flex-container3_item img:hover {
+   transform:scale(1.05);
+
+ 
+  background:#0000006c; 
    z-index:2;
+   -webkit-filter: brightness(20%);
+   color:#ffffff;
+   transition: transform 2s ease-in-out;
+
+  //  -webkit-transition: 1s -webkit-filter linear;
+  //  -moz-transition: 1s -moz-filter linear;
+  //  -moz-transition: 1s filter linear;
+  //  -ms-transition: 1s -ms-filter linear;
+  //  -o-transition: 1s -o-filter linear;
+  //  transition: 1s filter linear, 1s -webkit-filter linear;
+
  }
+
+
+   /* project container3 item */
+.flex-container3_item:hover{
+  transition: 1s;
+  color:#ffffff;
+}
+
+
   @media only screen and (max-width: 800px) {
    .flex-container3 {
  
@@ -207,9 +259,9 @@ font-size:2.5em;
     }
     .flex-container3_item img{
      width:70%;
-     height:50%;
+     height:200px;
      object-fit: cover;
-   border-radius: 30px;
+  //  border-radius: 8px;
     }
   
    }
@@ -320,10 +372,16 @@ color:black;
   
   }
 
+  @media only screen and (max-width: 1000px) {
+  canvas{
+// display:none;
+
+
+  }
 
 
 
-
+  }
 
 
 
@@ -352,13 +410,13 @@ color:black;
   
     text-align: center;
     height: 100vh;
-    font-size: 30px;
+    // font-size: 30px;
   background-color: #ffffff;
     color: rgb(0, 0, 0);
     margin-bottom: 5%;
     padding-left: 1%;
     padding-right: 15%;
-    padding-top: 143px;
+    padding-top: 200px;
     // margin-top:50px;
     z-index: 3;
     // background-color: black;
@@ -397,6 +455,7 @@ height:100vh;
     text-align:center;
        flex-direction:column;
        background-color: transparent; 
+ 
      }
     
   .card-container-item-left-inverse{

@@ -397,7 +397,7 @@ color:black;
     // background-color: #ffffff; 
     flex-direction:row;
     // color:white; 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     width:100%;
     position:relative;
 
@@ -411,7 +411,7 @@ color:black;
     text-align: center;
     height: 100vh;
     // font-size: 30px;
-  background-color: #ffffff;
+  background-color: #ffffff00;
     color: rgb(0, 0, 0);
     margin-bottom: 5%;
     padding-left: 1%;
@@ -520,7 +520,7 @@ margin-bottom:5px;
 
     flex-direction:row;
     color:white; 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     width:100vw;
     position:relative;
 
@@ -540,8 +540,8 @@ margin-bottom:5px;
       // margin-top: 5%;
     font-size:1.5em;
     padding-top:5%;
-   
-    z-index:4;
+    background-color: rgb(0, 0, 0);
+    z-index:7;
     padding-bottom:50px;
     // margin-top:50px;
   
@@ -561,8 +561,8 @@ margin-bottom:5px;
   font-size:1.5em;
   padding-top:5%;
   padding-bottom:5%;
-
-  background-color: white;
+  z-index:4;
+  background-color: rgba(255, 255, 255, 0);
 
 
  

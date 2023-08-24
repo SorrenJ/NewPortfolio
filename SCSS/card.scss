@@ -37,6 +37,55 @@ $white: #ffffff;
   margin-top: -507px;
 }
 
+
+
+.triangleBottomRight{
+  border-bottom: 28vh solid rgb(0,0,0);
+  border-right: 102vw solid transparent;
+  float: right;
+  margin-top: 155px;
+  margin-left:-25%;
+}
+
+.triangleBottomRight-Meditate{
+  border-bottom: 55vh solid rgb(0,0,0);
+  border-right: 78vw solid transparent;
+  float: right;
+  margin-top:-412px;
+  margin-left:-25%;
+  z-index:9;
+}
+
+.triangleBottomRight-banner{
+  border-bottom: 55vh solid rgb(0,0,0);
+  border-right: 78vw solid transparent;
+  float: right;
+  margin-top:-412px;
+  margin-left:55%;
+  z-index:9;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .triangleBottomRight{
+display:none;
+
+  }
+  .triangleBottomRight-Meditate{
+    display:none;
+  }
+}
+
+
+
+.triangleBottomLeft{
+  width: 92vw;
+  // height: 100vh;
+  border-top: 40vw  solid rgb(0, 0, 0);
+  border-right: 39vh solid transparent;
+  float:right;
+  margin-top: -507px;
+}
 @media only screen and (max-width: 1000px) {
   .triangleTopLeft{
 display:none;
@@ -60,7 +109,7 @@ display:none;
   margin-top:-300px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .triangleTopRight{
 display:none;
 
@@ -75,13 +124,26 @@ display:none;
   margin-left: -10%;
   position: absolute;
 }
+.triangleBottomRight-inverse {
+  border-left: 16vh solid transparent;
+  border-bottom: 25vw solid #000000;
+  z-index: 3;
+  /* margin-left: -10%; */
+  position: absolute;
+  margin-top: 67vh;
+}
 
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .triangleTopRight-inverse{
 display:none;
 
   }
+
+  .triangleBottomRight-inverse {
+display:none;
+
+  }
+
 
 }
 
@@ -95,11 +157,12 @@ display:none;
   border-top: 39vw solid rgb(0,0,0);
   margin-left: -10%;
   position: absolute;
+  z-index:6;
 
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .triangleTopLeft-inverse{
 display:none;
 
@@ -109,7 +172,7 @@ display:none;
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .triangleTopLeft-inverse{
 display:none;
 
@@ -150,12 +213,13 @@ align-items:center;
   // background-size: cover;
 // object-fit: cover;
   width:980px;
-  height:1000px;
+  height:880px;
+  z-index:-2;
   // padding-bottom: 5px;
 //  filter:brightness(0.5);
  
 animation: float 6s ease-in-out infinite;
-z-index:0;
+// z-index:0;
 }
 
 .sorren-oval {

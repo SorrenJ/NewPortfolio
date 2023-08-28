@@ -22,7 +22,7 @@ header {
     top: 0;
     position: fixed;
     z-index: 3;
-    background: $white;
+    background: $black;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -59,7 +59,7 @@ header {
 
 /* navbar - desktop*/
 .nav {
-    color: rgb(0, 0, 0);
+    // color: rgb(0, 0, 0);
     top: 0;
     z-index: 3;
     font-size: 0.8em;
@@ -69,6 +69,7 @@ header {
 
 i .fa-solid .fa-drumstick-bite {
     font-size: 45pt;
+    color:$white;
 }
 
 .nav .nav-item {
@@ -81,7 +82,7 @@ i .fa-solid .fa-drumstick-bite {
     padding-right: 30px;
     padding-left: 30px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     display: block;
     transition: .3s background-color;
     text-align: right;
@@ -111,7 +112,7 @@ i .fa-solid .fa-drumstick-bite {
 }
 
 a {
-    color: #000000;
+    color:$white;
 }
 
 .nav-item:hover {
@@ -133,6 +134,10 @@ a {
     display: none;
 }
 
+.initialNav{
+transform:translateX(-500px);
+}
+
 /* end of desktop navbar */
 
 /* mobile nav bar */
@@ -143,7 +148,7 @@ a {
     }
 
     .hamburger {
-        color: black;
+        color: rgb(255, 255, 255);
         margin-left: 5%;
         display: inline-block;
         transform: rotate(0deg);

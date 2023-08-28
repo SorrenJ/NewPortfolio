@@ -507,13 +507,7 @@ z-index:8;
 
 
     
-  .section1{
-    // height: 100vh; 
-    // opacity:1;
-    /* color:rgb(255, 255, 255); */
-    
-   transform:translateX(-500px);
-}
+
   .inverse{
       background-color: black;
       color:white;
@@ -529,6 +523,24 @@ z-index:8;
    
   }
 
+  section{
+
+    
+   transform:translateX(0px);
+}
+ 
+
+
+
+  @media only screen and (max-width: 1000px) {
+  .section1{
+    // height: 100vh; 
+    // opacity:1;
+    /* color:rgb(255, 255, 255); */
+    
+  // transform:translateX(-500px);
+}
+  }
 
   
   @media only screen and (min-width: 1000px) {

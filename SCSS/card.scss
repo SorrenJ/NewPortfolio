@@ -322,7 +322,7 @@ margin-top: 20vh;
   }
 }
 
-
+@media only screen and (min-width: 1000px) {
 .element_fadein{
   transition:  opacity 2s;
   opacity: 1;
@@ -333,6 +333,16 @@ margin-top: 20vh;
   transition-delay: 4s;
 }
 
+}
+@media only screen and (max-width: 1000px) {
+.element_fadein{
+  transition:  opacity 0s;
+  opacity: 1;
+
+}
+
+
+}
 
 .skill_container{
   text-align:right; 

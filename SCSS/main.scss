@@ -525,13 +525,13 @@ z-index:8;
     /* background-color: black; */
 
  transform:translateX(0px);
- transition: transform 2s;
+//  transition: transform 2s;
    
   }
 
 
   
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (min-width: 1000px) {
     section{
       transform:translateX(0px);
    
@@ -541,7 +541,7 @@ z-index:8;
       /* background-color: black; */
    animation: movein 2s;
    transform:translateX(0px);
-   transition: transform 0s;
+   transition: transform 2s;
      
     }
 

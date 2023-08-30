@@ -2,6 +2,8 @@
 
 /* petals animations */
 
+@media only screen and (min-width: 1000px) {
+
 #petals {position:relative;top:-150px;width:100%;  text-align: right;}
 
 #petals i {
@@ -104,4 +106,5 @@
             rotate(0deg);
         opacity: 0;
     }
+}
 }

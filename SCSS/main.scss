@@ -58,6 +58,11 @@ html, body{
   
     }
   
+ canvas{
+  display:none;
+ }
+ 
+ 
   }
 
 
@@ -484,10 +489,7 @@ z-index:8;
     }
   
   
-  canvas {
-    display: block;
-  }
-  
+
   * {
       margin: 0;
       padding: 0;
@@ -548,6 +550,10 @@ z-index:8;
       transform:translateX(0px);
    
     }
+    canvas {
+      display: block;
+    }
+    
   
     .fadein{
       /* background-color: black; */
@@ -727,32 +733,39 @@ z-index:8;
   font-family:$myFont;
   // background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url("../assets/MountainsNight3.png") !important;
   
-  background-image:linear-gradient(rgba(0, 0, 0, 0.205), rgb(4, 0, 12), rgba(0, 0, 0, 0.466)), url("../assets/MountainsNightBW.jpg") !important;
+  // background-image:linear-gradient(rgba(0, 0, 0, 0.205), rgb(4, 0, 12), rgba(0, 0, 0, 0.466)), url("../assets/MountainsNightBW.jpg") !important;
   /* width: 100%; */
-  margin-left: 0;
-  margin-right: 0;
-  background-size: cover;
-  background-color: #ffffffe8;
+  // margin-left: 0;
+  // margin-right: 0;
+  // background-size: cover;
+  // background-color: #ffffffe8;
   /* background-blend-mode: hard-light; */
- color:white;
-  background-size: 120% 100em;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-background-blend-mode:darken;
-  animation: mymove 8s alternate infinite;
+//  color:white;
+//   background-size: 120% 100em;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// background-blend-mode:darken;
+//   animation: mymove 8s alternate infinite;
 // z-index:4;
+background-color: #000000;
+}
 
+.project{
+  // background-color:#000000;
 }
     .section2{
-      color:#000000;
+     
       margin-left:0;
       margin-right:0;
-    
+// background-color: #000000;
+
       }
     
  
-    
+   
+
+
     .section2:hover .button{
       color:#ffffff;
       transition: 0.5s;
@@ -767,54 +780,72 @@ background-blend-mode:darken;
         }
       
     
+
         @media only screen and (min-width: 1000px) {
-          .section2:hover{
+       
+          .section2{
             color:#ffffff;
-          z-index:1;
+          }
+          .section2:hover{
+           color:#000000;
+         z-index:1;
+         transition: 8s;
           
             }
-  
+      
+            .section2 .greenbox{
+              width: 0; 
+              height: 0; 
+             position:absolute;
+              border-left: 100vw solid transparent;
+               border-top: 75vh solid rgb(0, 0, 0);
+               z-index:-1;
+        
+            }
           .section2:hover .greenbox {
    
       float: right;
-    // background-color: #000000;
-     position:absolute;
-    //   height: 100%;
-    // width: 100%;
 
-    width: 0; 
-     height: 0; 
-     border-left: 100vw solid transparent;
-     border-top: 75vh solid rgb(0,0,0);
-
-
+      // border-left: 100vw solid transparent;
+      // border-top: 75vh solid rgba(13, 13, 13, 0);
+   color:#000000;
       line-height: 100px;
       transform-origin: 100% 0%;
-      animation: main 1s;
-      z-index:-1;
-      -webkit-transition: main 5s ease-out;   
+      animation: main 8s;
+//  transition: main 5s ease-out;   
+      -webkit-animation-fill-mode: forwards;
     }
     @keyframes main {
       0% {
        
-        transform: scaleX(0);
+        transform: scaleX(1);
       }
       100% {
         
-        transform: scaleX(1);
+        transform: scaleX(0.1);
       }
     }
-    
-
   }
+
+  @media only screen and (max-width: 1000px) {
+
+    .section2 .greenbox{
+   color:#000000;
+
+    }
+  }
+
+ 
 
 
     .section2inverse{
       color:#000000;
       margin-left:0;
       margin-right:0;
-      // background:#ffffff;
-      }
+      // background:#000000;
+    
+    
+    }
       .section2inverse h1{
         font-size:1.5em;
                 }
@@ -841,9 +872,34 @@ background-blend-mode:darken;
           .section2inverse:hover{
             color:#ffffff;
           z-index:1;
-          transition: color 0.5s;
+          transition: color 8s;
           
             }
+
+
+            .section2inverse .greenbox2{
+              
+              float: left;
+              // background-color: #000000;
+             position:absolute;
+            
+        
+             width: 0; 
+             height: 0; 
+             border-right: 214vw solid transparent;
+             border-bottom: 75vh solid rgb(0, 0, 0);
+             transform: scaleX(0.1);
+              line-height: 100px;
+              transform-origin: 0% 100%;
+             
+              z-index:-1;
+              
+        
+
+
+
+            }
+
     .section2inverse:hover .greenbox2 {
       float: left;
       // background-color: #000000;
@@ -853,23 +909,19 @@ background-blend-mode:darken;
      width: 0; 
      height: 0; 
      border-right: 214vw solid transparent;
-     border-bottom: 75vh solid rgb(0,0,0);
+     border-bottom: 75vh solid rgb(0, 0, 0);
 
-    //  border-left:280vh solid transparent;
-    //  border-top: 25vw solid #000000;
-    //  width: 85vw;
-    //  height: 100%;
-      // width: 100%;
       line-height: 100px;
       transform-origin: 0% 100%;
-      animation: main 1s;
+      animation: main1 8s;
       z-index:-1;
-      -webkit-transition: main1 5s ease-out;   
+    transition: main1 8s ease-in-out;   
+    -webkit-animation-fill-mode: forwards;
     }
     @keyframes main1 {
       0% {
     
-        transform: scaleX(0);
+        transform: scaleX(0.1);
       }
       100% {
         transform: scaleX(1);

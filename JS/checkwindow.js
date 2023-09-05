@@ -1,5 +1,5 @@
 function checkWindowSize() {
-    if (window.innerWidth < 800) {
+    if (window.innerWidth < 1200) {
     var specificScript = document.getElementById('pro');
         specificScript.parentNode.removeChild(specificScript);
     } else {

@@ -45,7 +45,7 @@ html, body{
 
   .triangleTopLeft_main{
     width: 11vw;
-    border-top: 100vh solid rgb(0,0,0);
+    border-top: 100vh solid  #1a0f1e;
     border-right: 35vw solid transparent;
     margin-left: 95%;
     margin-top: -100vh;
@@ -73,8 +73,9 @@ html, body{
         // padding-right:5%;
         // width:100%;
         margin-top: 50%;
-        margin-right: 25%;
-     margin-left: 35%;
+        margin-right: 30%;
+        margin-left: 25%;
+        width:200%;
      -webkit-filter: brightness(50%);
       }
 
@@ -822,7 +823,7 @@ background-color: #000000;
       .section2:hover .button:hover{
         color:#ffffff;
         transition: 0.5s;
-        background-color: #000000;
+        background-color:  #1a0f1e;
         border-color: #ffffff;
         }
       
@@ -845,7 +846,7 @@ background-color: #000000;
               height: 0; 
              position:absolute;
               border-left: 100vw solid transparent;
-               border-top: 75vh solid rgb(0, 0, 0);
+               border-top: 75vh solid  #1a0f1e;
                z-index:-2;
         
             }
@@ -936,7 +937,7 @@ position: absolute;
              width: 0; 
              height: 0; 
              border-right: 250vw solid transparent;
-             border-bottom: 80vh solid rgb(0, 0, 0);
+             border-bottom: 80vh solid  #1a0f1e;
              transform: scaleX(1);
               line-height: 100px;
               transform-origin: 0% 100%;
@@ -1468,5 +1469,5 @@ border-color:transparent;
 
 footer{
 
-  background:#000000;
+  background:#1a0f1e;
 }

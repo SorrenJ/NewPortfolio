@@ -1,7 +1,7 @@
 $myFont: Verdana, Geneva, Tahoma, sans-serif;
 
 $brand_pink: #DF62BC;
-$black: #000000;
+$black:  #1a0f1e;
 $white: #ffffff;
 
 body {
@@ -17,6 +17,8 @@ header {
     font-weight: bold;
 
 }
+
+
 
 .home_nav {
     top: 0;
@@ -116,13 +118,11 @@ a {
 }
 
 .nav-item:hover {
-    color: #000000;
+    // color: #000000;
     transition: .5s background-color;
 }
 
-.hamburger {
-    display: none;
-}
+
 
 #myLinks {
     display: flex;
@@ -137,12 +137,34 @@ a {
 .initialNav{
 transform:translateX(-500px);
 }
+.fa-bars::before{
+   display: none !important;
+    color:transparent !important;
+}
+ .hamburger {
+    display: none;
+}
+
+/* desktop screens for cart item only*/
+@media screen and (min-width: 800px) {
+
+    #myLinks {
+        display: flex !important;
+        /* open closed hamburger when go back to desktop screen */
+    }
+
+
+ 
+}
 
 /* end of desktop navbar */
 
 /* mobile nav bar */
 @media screen and (max-width: 800px) {
-
+    .fa-bars::before{
+        display: block !important;
+        color:white !important;
+     }
     .nav .nav-item {
         text-align: center;
     }
@@ -247,12 +269,3 @@ transform:translateX(-500px);
 }
 
 
-/* desktop screens for cart item only*/
-@media screen and (min-width: 800px) {
-
-    #myLinks {
-        display: flex !important;
-        /* open closed hamburger when go back to desktop screen */
-    }
-
-}

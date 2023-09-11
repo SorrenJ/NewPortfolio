@@ -3,7 +3,7 @@ $titleSize_desktop: 4em;
 $titleSize_mobile: 2em;
 
 $brand_pink: #DF62BC;
-$black: #000000;
+$black:  #1a0f1e;
 $white: #ffffff;
 
 
@@ -31,7 +31,7 @@ $white: #ffffff;
  .triangleTopLeft{
   width: 92vw;
   // height: 100vh;
-  border-top: 40vw  solid rgb(0, 0, 0);
+  border-top: 40vw  solid #1a0f1e;;
   border-right: 39vh solid transparent;
   float:right;
   margin-top: -507px;
@@ -40,7 +40,7 @@ $white: #ffffff;
 
 
 .triangleBottomRight{
-  border-bottom: 28vh solid rgb(0,0,0);
+  border-bottom: 28vh solid #1a0f1e;
   border-right: 102vw solid transparent;
   float: right;
   margin-top: 155px;
@@ -48,7 +48,7 @@ $white: #ffffff;
 }
 
 .triangleBottomRight-Meditate{
-  border-bottom: 55vh solid rgb(0,0,0);
+  border-bottom: 55vh solid #1a0f1e;
   border-right: 78vw solid transparent;
   float: right;
   margin-top:-412px;
@@ -57,7 +57,7 @@ $white: #ffffff;
 }
 
 .triangleBottomRight-banner{
-  border-bottom: 55vh solid rgb(0,0,0);
+  border-bottom: 55vh solid #1a0f1e;
   border-right: 78vw solid transparent;
   float: right;
   margin-top:-412px;
@@ -81,7 +81,7 @@ display:none;
 .triangleBottomLeft{
   width: 92vw;
   // height: 100vh;
-  border-top: 40vw  solid rgb(0, 0, 0);
+  border-top: 40vw  solid #1a0f1e;;
   border-right: 39vh solid transparent;
   float:right;
   margin-top: -507px;
@@ -103,7 +103,7 @@ display:none;
 .triangleTopRight{
   width: 85vw;
   height: 100vh;
-  border-top: 100vh solid rgb(0, 0, 0);
+  border-top: 100vh solid #1a0f1e;;
   border-left: 246px solid transparent;
   float:right;
   margin-top:-300px;
@@ -119,14 +119,14 @@ display:none;
 
 .triangleTopRight-inverse{
   border-left:280vh solid transparent;
-  border-top: 25vw solid #000000;
+  border-top: 25vw solid  #1a0f1e;
   z-index: 4;
   margin-left: -10%;
   position: absolute;
 }
 .triangleBottomRight-inverse {
   border-left: 16vh solid transparent;
-  border-bottom: 25vw solid #000000;
+  border-bottom: 25vw solid  #1a0f1e;
   z-index: 3;
   /* margin-left: -10%; */
   position: absolute;
@@ -154,7 +154,7 @@ display:none;
 
 .triangleTopLeft-inverse{
   border-right: 100vh solid transparent;
-  border-top: 39vw solid rgb(0,0,0);
+  border-top: 39vw solid #1a0f1e;
   margin-left: -10%;
   position: absolute;
   z-index:6;

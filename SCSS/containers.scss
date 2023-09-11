@@ -3,7 +3,7 @@ $titleSize_desktop: 4em;
 $titleSize_mobile: 2em;
 
 $brand_pink: #DF62BC;
-$black: #000000;
+$black: #1a0f1e;
 $white: #ffffff;
 
 
@@ -22,7 +22,7 @@ $white: #ffffff;
     /* margin: 10px; */
     text-align: left;
     height: 100vh;
-    font-size: 30px;
+    // font-size: 30px;
     /* margin: 100px; */
     color: rgb(255, 255, 255);
     margin-bottom: 5%;
@@ -31,7 +31,7 @@ $white: #ffffff;
     padding-top: 33vh;
     margin-right: 20%;
     /* padding-bottom: 33vh; */
-    background-color: black;
+    background-color: #1a0f1e;
 
   
 }
@@ -62,14 +62,14 @@ $white: #ffffff;
      
      .flex-banner-item-left {
   @include dark-container-item-left;
-
-  
+  padding-right: 0;
+  padding-left: 8%;
+  font-size: 2.1em;
   }
   
 
   .flex-banner-item-left h1 {
-
-font-size:1.5em;
+   
   }
 
 @media only screen and (max-width: 800px) {
@@ -87,7 +87,7 @@ font-size:1.5em;
       text-align:center;
       margin-left: auto;
       margin-right:auto;
-      
+     
       padding-top: 15vh;
       padding-bottom: 5vh;
     }
@@ -141,7 +141,7 @@ font-size:1.5em;
   .section1{
     position:relative;
     color:white;
-    background-color: #000000;
+    background-color: #1a0f1e;
     padding-top:5px;
     height:50vh;
     }
@@ -321,7 +321,7 @@ word-break: break-word;
   padding-right: 2%;
   padding-top: 33vh;
 z-index:3;
-  // background-color: black;
+  // background-color: #1a0f1e;
 }
 
 
@@ -350,7 +350,7 @@ z-index:3;
     text-align:center;
     margin-left: auto;
     margin-right:auto;
-    background: black;
+    background-color: #1a0f1e;
     padding-top: 15vh;
    padding-bottom: 5%;
    padding-top: 5%;
@@ -422,7 +422,7 @@ color:black;
     padding-top: 200px;
     // margin-top:50px;
     z-index: 3;
-    // background-color: black;
+    // background-color: #1a0f1e;
   }
 
 
@@ -439,7 +439,7 @@ color:black;
   padding-top:5%;
 z-index:6;
 height:100vh;
-  background-color: #000000; 
+  background-color: #1a0f1e; 
   // align-items: right;
  color:#ffffff;
 
@@ -485,7 +485,7 @@ order:0;
     text-align: center;
      margin-top: -5px;
      margin-left:0;
-     background-color: #000000; 
+     background-color: #1a0f1e; 
      color:rgb(255, 255, 255);
      padding-top: 15%;
      padding-left:5%;
@@ -540,6 +540,7 @@ margin-bottom:5px;
       .further_item{
         // padding-left:5%;
         // padding-right:5%;
+       color:#1a0f1e;
         width:100%;
         padding-top: 5%;
         margin-right: 12%;
@@ -547,6 +548,18 @@ margin-bottom:5px;
      -webkit-filter: brightness(50%);
       }
 
+
+      .further_item h3{
+        position:relative;
+        text-align:justify;
+
+        margin-top:5%;
+     // width:100%;
+       // margin-left: -25%;
+       // margin-right: auto;
+     //   padding-left: 1px;
+     //  padding-right: 55px;
+     }
 .further_item:hover{
       z-index:2;
       -webkit-filter: brightness(100%);
@@ -555,22 +568,17 @@ margin-bottom:5px;
    
     }
 
-    .further_item h3{
-       position:relative;
-       text-align:justify;
-       align-items: center;
+    .further_item:hover > .further_item h3{
 
-       margin-top:5%;
-    // width:100%;
-      // margin-left: -25%;
-      // margin-right: auto;
-    //   padding-left: 1px;
-    //  padding-right: 55px;
+      color:#ffffff;
+    
+   
     }
+
 
       @media only screen and (max-width: 1250px) {
         .contact_image{
-          width:55%;
+          // width:55%;
         }
 
         
@@ -593,7 +601,7 @@ margin-top:350px;
 z-index:10;
    padding-left: 5%;
      padding-right: 5%;
- 
+   color:  #1a0f1e
         }
         .further_item h3{
           font-size:0.5em;
@@ -628,12 +636,12 @@ z-index:10;
       // margin-top: 5%;
     font-size:1.5em;
     padding-top:5%;
-    background-color: rgb(0, 0, 0);
+    background-color:  #1a0f1e;
     z-index:7;
     padding-bottom:50px;
     // margin-top:50px;
   
-    // background-color: black;
+    // background-color: #1a0f1e;
   }
   
   
@@ -676,7 +684,7 @@ z-index:10;
       // padding-top: 5vh;
       margin-top:100px;
       padding-bottom: 233px;
-      background-color: black; 
+      background-color: #1a0f1e; 
       height:fit-content;
       z-index: 6;
     }

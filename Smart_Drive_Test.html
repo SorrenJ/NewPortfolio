@@ -21,6 +21,7 @@
 
 
   <link rel="icon" href="assets/logo.svg" sizes=96x96 />
+  <link href="SCSS/grid.css" rel="stylesheet">
   <link href="SCSS/togglemenu.css" rel="stylesheet">
   <link href="SCSS/sorren_sdt.css" rel="stylesheet">
   <link href="SCSS/navbar.css" rel="stylesheet">
@@ -603,35 +604,30 @@
   
   </div>
   <!-- end of card 2 -->
-  <footer style="z-index:6">
-    <div class="further_links">
-      <div class="further_item">
-     
-       <a href="https://github.com/SorrenJ/" target="_blank">
-     <img class="contact_image" src="assets/github.png" alt="github" style="">
-     
-     </a>
-     <h3>Github</h3> 
-     </div>
-       <br>
-     
-       <div class="further_item">
-       <a href="styleguide.html" target="_blank">
-         <img class="contact_image" src="assets/style.png" alt="styleguide">
-       </a>
-       <h3>Styleguide</h3> 
-       </div>
-       <br>
-       <div class="further_item">
-       <a href="references.html">
-        <img class="contact_image" src="assets/book.png" alt="book">
-       </a>
-       <h3>References</h3> 
-       </div>
-     </div>
+  <footer style="background:black">
+    <!-- <h1 style="margin-left:-1%; text-align:center">Contact Me</h1> -->
+    <div id="contact" class="footerContainer" >
   
-    </footer>
-
+  
+  
+  
+  
+      <div class="grid">
+        <div class="column-xs-12">
+          <ul class="social">
+    <li><a href="https://github.com/SorrenJ/" target="_blank" rel="noopener noreferrer"><span style="font-size:50px; filter: brightness(3);" class="fa-brands fa-github"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/sorren-alex-jao/" target="_blank"><span style="font-size:50px ;filter: brightness(3); " class="fa-brands fa-linkedin"></span></a></li>
+            <li><a href="styleguide.html" target="_blank" ><span style="font-size:50px;filter: brightness(3); " class="fa-solid fa-palette"></span></a></li>
+            <li><a href="references.html" target="_blank" ><span style="font-size:50px;filter: brightness(3); " class="fa-solid fa-book"></span></a></li>
+          </ul>
+      
+          <p class="copyright">This website was manually coded by Sorren</p>
+          <p class="copyright">&copy; Copyright 2023 Sorren Jao</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
   <script>
     function open1() {
       document.getElementById("code1").style.display = "block";

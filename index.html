@@ -13,17 +13,17 @@
 
 
   <link rel="icon" href="assets/logo.svg" sizes=96x96 />
-
+  <link href="SCSS/grid.css" rel="stylesheet">
   <link href="SCSS/petals.css" rel="stylesheet">
   <link href="SCSS/navbar.css" rel="stylesheet">
   <link href="SCSS/containers.css" rel="stylesheet">
-  <link href="SCSS/main.css" rel="stylesheet">
+  <link href="SCSS/main.css" rel="stylesheet"> 
   <link href="SCSS/card.css" rel="stylesheet">
   <link href="SCSS/typing.css" rel="stylesheet">
+  <link href="SCSS/togglemenu.css" rel="stylesheet">
 
 
 
-  
 
 
   <!-- <script type="text/javascript" src="JS/js/lib/jquery.min.js"></script>
@@ -36,27 +36,28 @@
 
 <body>
 
+  <!-- header -->
   <header>
-    <!-- header -->
-    <div class="home_nav">
-      <div class="home_nav-item">
-        <div class="home_icon">
-          <a href="index.html"><img src="assets/logo.svg" alt="logo"></a>
-    
-            <i  class="fa fa-bars hamburger" style="font-size:35pt;" onclick="myFunction()"></i>
-        
-        </div>
-      </div>
+  <div class="home_nav" style="font-size:24pt; z-index:98">
+    <div class="home_nav-item">
+      <div class="home_icon"><a href="index.html">
+          <img src="assets/logo.svg" alt="logo"></a>
 
-      <div class="home_nav-item initialNav fadein" style="">
-        <div id="myLinks" class="nav">
-          <div class="nav-item"> <a href="#about">About</a></div>
-          <div class="nav-item "><a href="#project">Projects</a></div>
-          <div class="nav-item "><a href="#contact">Contact</a></div>
-        </div>
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+          <i class="fa fa-bars" style="font-size:24pt; z-index:99"></i>
+        </a>
       </div>
     </div>
-  </header>
+
+    <div class="home_nav-item">
+      <div id="myLinks" class="nav">
+        <div class="nav-item"> <a href="index.html#about">About</a></div>
+        <div class="nav-item "><a href="index.html#project">Projects</a></div>
+        <div class="nav-item "><a href="index.html#contact">Contact</a></div>
+      </div>
+    </div>
+  </div>
+</header>
 
   <script src="JS/navbar.js"></script>
   <main>
@@ -87,8 +88,8 @@
       <div class="flex-container-banner">
         <div class="flex-banner-item-left" >
          
-         <div class="banner-text" style="" >
-          <h1 >Sorren Jao</h1>
+         <div class="banner-text element_invisible" style="" >
+          <h1>Sorren</h1>
           <p>Web Developer</p>
 
       
@@ -573,10 +574,10 @@
           <source media="(min-width: 1000px)"  srcset="assets/sdt_png.png" />
 
 
-         <img class="proj-img" src="assets/sdt_png.png" alt="sdt"/>
+         <img class="proj-img element_invisible" src="assets/sdt_png.png" alt="sdt"/>
         </picture>
         </div>
-        <div>
+        <div class="element_invisible ">
           <h1>Smart Drive Test</h1>
           <p> A learning platform, teaching new and experienced drivers ways to improve driving.</p>
           <div class="tag"> Joomla!</div>
@@ -604,7 +605,7 @@
       </div>
       <div class="flex-container">
 
-        <div>
+        <div class="element_invisible">
           <h1>Profile Helper</h1>
           <p>A content generator tool to help with creating graduate student profile pages.</p>
           <div class="tag">HTML</div>
@@ -617,7 +618,7 @@
           </a>
         </div>
 
-        <div class="proj-img-container"> <img class="proj-img" src="assets/ImgUI/Picture4.png" alt="profile_helper">
+        <div class="proj-img-container element_invisible"> <img class="proj-img" src="assets/ImgUI/Picture4.png" alt="profile_helper">
 
         </div>
   
@@ -766,7 +767,7 @@
 
 
   </main>
-<footer style="z-index:6">
+<!-- <footer style="z-index:6">
   <div class="further_links">
     <div class="further_item">
    
@@ -793,7 +794,36 @@
      </div>
    </div>
 
+  </footer> -->
+
+
+
+
+  <footer style="background:black">
+    <!-- <h1 style="margin-left:-1%; text-align:center">Contact Me</h1> -->
+    <div id="contact" class="footerContainer" >
+  
+  
+  
+  
+  
+      <div class="grid">
+        <div class="column-xs-12">
+          <ul class="social">
+    <li><a href="https://github.com/SorrenJ/" target="_blank" rel="noopener noreferrer"><span style="font-size:50px; filter: brightness(3);" class="fa-brands fa-github"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/sorren-alex-jao/" target="_blank"><span style="font-size:50px ;filter: brightness(3); " class="fa-brands fa-linkedin"></span></a></li>
+            <li><a href="styleguide.html" target="_blank" ><span style="font-size:50px;filter: brightness(3); " class="fa-solid fa-palette"></span></a></li>
+            <li><a href="references.html" target="_blank" ><span style="font-size:50px;filter: brightness(3); " class="fa-solid fa-book"></span></a></li>
+          </ul>
+      
+          <p class="copyright">This website was manually coded by Sorren</p>
+          <p class="copyright">&copy; Copyright 2023 Sorren Jao</p>
+        </div>
+      </div>
+    </div>
   </footer>
+
+
   <script src="JS/section_observer.js"></script>
   <!-- <script type="text/javascript" src="JS/js/tracking.js"></script> -->
 

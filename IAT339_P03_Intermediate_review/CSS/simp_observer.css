@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+section{
+    height: 100vh; 
+    opacity:0;
+    color:rgb(2, 2, 2);
+}
+
+.inverse{
+    background-color: black;
+    color:white;
+    transition:  background-color 1s;
+}
+
+
+.fadein{
+  /* background-color: black; */
+ 
+  transition:  opacity 0.5s;
+  opacity: 1;
+}
+
+
+/* Sections */
+.section {
+    color: rgb(0, 0, 0);
+    position: relative;
+    /* scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; */
+    height: 100vh;
+    opacity: 0;
+    /* transform: translateY(100px); */
+    transition: transform 1s, opacity 1s;
+    background-color:blue;
+  }
+
+
+.anime{
+  /* opacity: 0;
+  transform: translate3d(0, 4rem, 0);
+  transition: opacity 800ms var(--delay), transform 800ms cubic-bezier(0.13, 0.07, 0.26, 0.99) var(--delay); */
+
+  opacity: 1;
+  /* transform: translateY(0px); */
+}
+div{
+    transition: all transform 1s,
+}
+.slideleftInitial{
+    background-color:red;
+    width:100px;
+    height:100px;
+    /* width:100%;
+    height:100%; */
+
+    transition-timing-function: ease-in-out;
+    transition: all 1s,
+  }
+
+.slideleft{
+
+    transform: translateX(500px);
+ 
+  }
+ 
+
+  .redbox{
+/* background-color:red;
+width:50vw;
+height:50vh; */
+
+  }

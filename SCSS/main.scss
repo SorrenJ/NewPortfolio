@@ -736,6 +736,7 @@ z-index:8;
     .featured .button{
   margin-left:15%;
   
+  
     }
 
       /* mobile button elements */
@@ -846,35 +847,33 @@ background-color: #000000;
               height: 0; 
              position:absolute;
               border-left: 100vw solid transparent;
-               border-top: 75vh solid  #1a0f1e;
+               border-top: 110vh solid  #1a0f1e;
                z-index:-2;
-        
+               transform: scaleX(4);
             }
-          .section2:hover .greenbox {
+//           .section2:hover .greenbox {
    
-      float: right;
-position: absolute;
-      // border-left: 100vw solid transparent;
-      // border-top: 75vh solid rgba(13, 13, 13, 0);
-  //  color:#000000;
-      line-height: 100px;
-      transform-origin: 100% 0%;
-      animation: main 8s;
-//  transition: main 5s ease-out;   
-      -webkit-animation-fill-mode: forwards;
-    }
-    @keyframes main {
-      0% {
-       
-        transform: scaleX(1);
-      }
-      100% {
-        
-        transform: scaleX(2.5);
-      }
-    }
-  }
+//       float: right;
+// position: absolute;
+ 
+//       line-height: 100px;
+//      // transform-origin: 100% 0%;
+//        animation: main 8s;
 
+//       -webkit-animation-fill-mode: forwards;
+//     }
+//     @keyframes main {
+//       0% {
+       
+//         transform: scaleX(1);
+//       }
+//       100% {
+        
+//         transform: scaleX(2);
+//       }
+//     }
+  }
+        
   @media only screen and (max-width: 1000px) {
 
     .section2 .greenbox{

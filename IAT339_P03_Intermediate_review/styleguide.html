@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorren Jao - Styleguide</title>
+
+  <link rel="icon" href="assets/logo.svg" sizes=96x96 />
+
+  <link href="CSS/styleguide.css" rel="stylesheet">
+  <link href="CSS/navbar.css" rel="stylesheet">
+  <link href="CSS/containers.css" rel="stylesheet">
+  <link href="CSS/card.css" rel="stylesheet">
+
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navbar starts here -->
+  <header>
+    <!-- <button class="button" id="menu-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false">Menu</button> -->
+    <!-- header -->
+    <div class="home_nav">
+      <div class="home_nav-item">
+        <div class="home_icon"><a href="index.html">
+            <img src="assets/logo.svg" alt="logo"></a>
+          <!-- <p class="nav_heading">&nbsp;The Sweet Spot</p> -->
+          <!-- <div class="mobile_cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div> -->
+          <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+            <i class="fa fa-bars" style="font-size:24pt"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="home_nav-item">
+        <div id="myLinks" class="nav">
+          <div class="nav-item"> <a href="products.html">About</a></div>
+          <div class="nav-item "><a href="contactUs.html">Projects</a></div>
+          <div class="nav-item "><a href="citations.html">Contact</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script src="JS/navbar.js"></script>
+
+  <!-- page navigation -->
+  <br>
+  <br>
+  <div class="style_nav">
+
+
+
+    <a href="#branding">
+      <div class="style-nav-item">Branding</div>
+    </a>
+    <a href="#colors">
+      <div class="style-nav-item">Colors</div>
+    </a>
+    <a href="#fonts">
+      <div class="style-nav-item">Font</div>
+    </a>
+
+    <a href="#interactive">
+      <div class="style-nav-item">Interactive</div>
+    </a>
+
+    <a href="#projects">
+      <div class="style-nav-item">Project Listing</div>
+    </a>
+    <a href="#slideshow">
+      <div class="style-nav-item">About Slideshow</div>
+    </a>
+    <a href="#templates">
+      <div class="style-nav-item">Templates</div>
+    </a>
+    <a href="#git">
+      <div class="style-nav-item">Git Repo</div>
+    </a>
+  </div>
+
+
+  <!-- page section starts -->
+  <section>
+
+
+    <!-- brand identity section, composed of header then container below that is flex for the image and paragraph -->
+    <section id="branding">
+      <h2>
+        Brand Identity
+      </h2>
+      <hr>
+      <div>
+        <img class="logo" src="assets/Blossom_Tree.svg" alt="logo">
+
+        <p class="wrap">
+          My brand identity is the cherry blossom to represent growth and new beginnings.
+        </p>
+        <br>
+        <br>
+        <br>
+      </div>
+    </section>
+
+
+
+    <section id="colors">
+      <!-- Color Palette container -->
+      <div class="styleguide-container">
+        <br>
+        <br>
+        <br>
+        <h2>Color Palette</h2>
+        <hr>
+        <div class="colorPalette_white"></div>
+        <p style="display: inline"> #white - Background</p>
+        <br><br>
+        <div class="colorPalette_black"></div>
+        <p style="display: inline"> #000000; - Foreground (i.e. Buttons, Header, Footer, etc.)</p>
+        <br><br>
+        <div class="colorPalette_pink"></div>
+        <p style="display: inline"> #DF62BC - Hover or focus</p>
+        <br><br>
+        <div class="colorPalette_black"></div>
+        <p style="display: inline"> #000000 - Body Text Font</p>
+        <br><br>
+        <div class="colorPalette_transgrey"></div>
+        <p style="display: inline"> #2348624d - Container Border</p>
+        <br><br>
+        <div class="colorPalette_pink"></div>
+        <p style="display: inline"> #DF62BC - Brand Logo </p>
+        <br><br>
+      </div>
+      <!-- Color Palette container ends -->
+    </section>
+
+    <!-- specific stlying for the typography and then various text styles for headers and body text -->
+
+    <section id="fonts">
+
+      <h2>
+        Typography & Text Elements
+      </h2>
+      <hr>
+
+      <p class="typography">
+        Headings use 'Verdana' Font-family. Body text including paragraphs and buttons use 'Verdana' font-family.
+
+      </p>
+      <div class="text_elements_container">
+        <div class="text_elements">
+
+          <h1>Heading 1</h1>
+
+          <h2>Heading 2</h2>
+
+          <h3>Heading 3</h3>
+
+          <h4>Heading 4</h4>
+
+        </div>
+
+        <div class="text_elements">
+          <p class="body_text">
+            Body Text
+          </p>
+          <p class="caption_text">
+            Caption Text
+          </p>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- interactive elements section with the intext link & then the 2 kinds of buttons used -->
+    <section id="interactive">
+      <h2>
+        Interactive Elements
+      </h2>
+      <hr>
+
+      <h3>
+        In-text link
+      </h3>
+      <a target=_blank href="https://www.thesweetspotbakery.ca" class="nav-main"> The Real Sweet Spot </a>
+
+      <h3>
+        Buttons
+      </h3>
+     
+      <a target="_blank" href="https://olc.sfu.ca/index.php/blog/boosting-productivity-web-development"><div
+        class="button"> Read blog </div></a>
+      
+
+      <h3>
+        Gallery
+      </h3>
+    </section>
+
+
+
+
+
+    <br>
+    <div class="flex-container3">
+
+      <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/tailor.png" alt="tailor">
+        <br>
+        <p> How to Tailor your Website for Success</p>
+        <a target="_blank" href="https://olc.sfu.ca/index.php/blog/how-tailor-your-website-success"><div
+            class="button"> Read blog </div></a>
+
+      </div>
+      <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/zoom_me.png" alt="me">
+        <br>
+        <p>Joomla! Team Interview</p>
+        <a target="_blank" href="https://www.youtube.com/watch?v=lzK-7wYOdo0"><div class="button"> Watch video
+        </div></a>
+      </div>
+      <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/Hamburger.png" alt="hamburger">
+        <br>
+        <p>Boosting Productivity with Web Development</p>
+        <a target="_blank" href="https://olc.sfu.ca/index.php/blog/boosting-productivity-web-development"><div
+            class="button"> Read blog </div></a>
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+    <br>
+    <h2 id="projects">
+      Project Listing Template
+    </h2>
+    <hr>
+  </section>
+  
+
+  <!-- product template section listing a few products with image, description, price and then button below to "add to cart" (non functional) 
+               made with a flex container for product-list and then containers for the product molecules
+          -->
+
+
+
+  <section class="section2">
+    <div class="greenbox">
+    </div>
+    <div class="flex-container">
+
+      <div class="proj-img-container">
+
+        <img src="assets/sdt_gif.gif" alt="sdt">
+       
+      </div>
+      <div>
+        <h1>Smart Drive Test</h1>
+        <p> A learning platform, teaching new and experienced drivers ways to improve driving.</p>
+        <div class="tag"> Joomla!</div>
+        <div class="tag"> CSS</div>
+        <div class="tag"> HTML</div>
+        <div class="tag"> Hikashop</div>
+        <br><br>
+        <a href="Smart_Drive_Test.html"><div class="button"> Read more </div></a>
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+  <br>
+  <section class="section2">
+    <div class="greenbox">
+    </div>
+    <div class="flex-container">
+      <div class="proj-img-container"> <img src="assets/ImgUI/Picture4.png" alt="profile_helper">
+     
+      </div>
+      <div>
+        <h1>Profile Helper</h1>
+        <p>A content generator tool to help with creating graduate student profile pages.</p>
+        <div class="tag">HTML</div>
+        <div class="tag"> CSS</div>
+        <div class="tag">JavaScript</div>
+        <div class="tag">jQuery</div>
+        <br><br>
+        <a href="profile_helper_content.html"><div class="button"> Read more </div></a>
+      </div>
+    </div>
+  </section><br>
+  <section id="slideshow">
+    <h2>
+      About Me Slideshow Template
+    </h2>
+    <hr>
+  </section>
+  <div>
+    <div class="card">Card1 </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/random/1000x1000" alt="random" />
+      <div class="card-content">
+        Card2
+      </div>
+    </div>
+    <div class="card">Card3 </div>
+    <div class="card">Card4 </div>
+  </div>
+
+
+  <section id="templates">
+    <h2>Template pages</h2>
+    <hr>
+    <a target=_blank href="index.html" class="nav-main">Home template</a>
+    <br><br>
+    <a target=_blank href="project.html" class="nav-main">Project template</a>
+  </section>
+
+
+
+  <!-- Our github repo link-->
+  <section id="git">
+    <h2>Git Repository</h2>
+    <hr>
+    <a target=_blank href="https://github.com/SorrenJ/IAT339_P03" class="nav-main">Visit My Git
+      Repo </a>
+  </section>
+
+  <br>
+
+  <br>
+
+
+</body>
+
+</html>

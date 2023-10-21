@@ -1,0 +1,64 @@
+
+// Absolute Background
+.absolute-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  
+    height: 100%;
+    width: 100%;
+  
+    background-position: 50%;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // overflow: hidden;
+  }
+  
+
+// Fog
+.fog {
+    position: relative;
+  
+    height: 100vh;
+    width: 100%;
+    
+    background-color: #9f9e9e0f;
+  
+    &__container {
+      position: absolute;
+  
+      height: 100%;
+      width: 100%;
+  
+      overflow: hidden;
+    }
+  
+    &__img {
+      position: absolute;
+   
+      height: 100vh;
+      width: 300vw;
+  
+      &--first {
+        background: url('assets/fog-1.png') repeat-x;
+        background-size: contain;
+        background-position: center;
+        animation: marquee 60s linear infinite;
+      }
+  
+      &--second {
+        background: url('assets/fog-2.png') repeat-x;
+        background-size: contain;
+        background-position: center;
+        animation: marquee 40s linear infinite;
+      }
+    }
+  }
+  
+  // Marquee
+  @keyframes marquee {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-200vw, 0, 0); }
+  }
+  

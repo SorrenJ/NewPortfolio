@@ -1,12 +1,12 @@
 void setup()
 {
 
-     size(800,700);
+     size(800,600);
 
  }
 
 int levelsMin = 2;
-    int levelsMax = 7;
+    int levelsMax = 6;
     float initialLength = 100;
 
     float angleMin = PI/17;
@@ -22,11 +22,9 @@ int levelsMin = 2;
       
       if (levels>0){  //check if there are any levels left to render
             //destra
-
-       
             pushMatrix();           //save current transformation matrix
-            stroke(0);
-            rotate (angle/2.5);         //rotate new matrix to make it point to the right
+
+            rotate (angle);         //rotate new matrix to make it point to the right
             line (0,0,0,-length);   //draw line "upwards"
             pushMatrix();           //save current (e.g. new) matrix
             translate(0,-length);   //move the origin to the branch end
@@ -37,8 +35,7 @@ int levelsMin = 2;
             popMatrix();            //return to the original matrix
             //second branch - the same story
             pushMatrix();
-            stroke(0);
-            rotate (-angle/2.5);
+            rotate (-angle/1.7);
             line (0,0,0,-length);
             pushMatrix();
             translate(0,-length);
@@ -58,8 +55,8 @@ int levelsMin = 2;
   void drawFlowers() { // draws flowers on branches
 
     //  println("flowers");
-      noStroke();
-      fill(#db4cb3);
+      //noStroke();
+      fill(#FFFF00);
       //strokeWeight(0.4);
      ellipse(0, 0, 20, 20);
       // draw 5 petals rotating after each one
@@ -77,7 +74,7 @@ int levelsMin = 2;
         stroke(0,0, 0);
         strokeWeight(10);
 
-        float currentAngle = map (mouseX*10, 0, width, angleMin, angleMax); //mouse control of the branch angle
+        float currentAngle = map (mouseX, 0, width, angleMin, angleMax); //mouse control of the branch angle
         int currentLevels = (int)map (mouseY, height,0, levelsMin, levelsMax); //mouse control of the generations count
 
         pushMatrix(); //save the world transformation matrix

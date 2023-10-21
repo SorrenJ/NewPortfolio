@@ -21,7 +21,7 @@ html, body{
   body {
     margin: 0;
   font-family:$myFont;
-  background-image:linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2)), url("../assets/Mountains.png") !important;
+  background-image:linear-gradient(rgba(255, 255, 255, 0.2), (rgba(217, 179, 247, 0.249)), rgba(255, 255, 255, 0.2)), url("../assets/Mountains.png") !important;
   /* width: 100%; */
   margin-left: 0;
   margin-right: 0;
@@ -52,6 +52,18 @@ html, body{
 
   }
   
+  .triangleBottomRight-banner{
+    border-bottom: 55vh solid #1a0f1e;
+    border-right: 105vw solid transparent;
+    float: right;
+  
+    z-index:9;
+
+    margin-top: 112px;
+    position: absolute;
+    margin-left: 111px;
+  }
+  
   @media only screen and (max-width: 800px) {
     .triangleTopLeft_main{
   display:none;
@@ -62,6 +74,9 @@ html, body{
   display:none;
  }
  
+ .triangleBottomRight-banner{
+  display:none;
+ }
  
   }
 

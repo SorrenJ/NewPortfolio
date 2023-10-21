@@ -40,10 +40,10 @@ $white: #ffffff;
 
 
 .triangleBottomRight{
-  border-bottom: 28vh solid #1a0f1e;
-  border-right: 102vw solid transparent;
+  border-bottom: 76vh solid #1a0f1e;
+  border-right: 101vw solid transparent;
   float: right;
-  margin-top: 155px;
+  margin-top: -388px;
   margin-left:-25%;
 }
 
@@ -56,14 +56,6 @@ $white: #ffffff;
   z-index:9;
 }
 
-.triangleBottomRight-banner{
-  border-bottom: 55vh solid #1a0f1e;
-  border-right: 78vw solid transparent;
-  float: right;
-  margin-top:-412px;
-  margin-left:55%;
-  z-index:9;
-}
 
 
 @media only screen and (max-width: 1200px) {
@@ -124,14 +116,14 @@ display:none;
   margin-left: -10%;
   position: absolute;
 }
-.triangleBottomRight-inverse {
-  border-left: 16vh solid transparent;
-  border-bottom: 25vw solid  #1a0f1e;
-  z-index: 3;
-  /* margin-left: -10%; */
-  position: absolute;
-  margin-top: 67vh;
-}
+
+  .triangleBottomRight-inverse {
+    border-left: 318vh solid transparent;
+    border-bottom: 25vw solid #1a0f1e;
+    z-index: 3;
+    position: absolute;
+    margin-top: 55vh;
+  }
 
 @media only screen and (max-width: 1200px) {
   .triangleTopRight-inverse{

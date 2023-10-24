@@ -513,11 +513,11 @@ margin-bottom:5px;
     footer{
       // margin-top:0;
       // z-index:12;
-
+      position:relative;
       padding: 1rem 0;
       // background: #f7f7f7;
       text-align: center;
-      z-index:8;
+      z-index:99;
 
     }
     .further_links{
